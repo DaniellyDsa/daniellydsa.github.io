@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+</head>
+
+<body>
+	<header>
+		<h1>Aulas de Hipermidias</h1>
+		<h2>Preencha o formulário abaixo</h2>
+	</header>
+	<section>
+		<form>
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				<p> 
+					<label for="nome">Nome: </label>
+					<input type="text" name="nome" id="nome"> 
+					<label for="sobrenome">Sobrenome: </label>
+					<input type="text" name="sobrenome" id="sobrenome">
+				</p>
+				<p>
+					<label for="nasc">Nascimento: </label>
+					<input type="date" name="nasc" id="nasc">
+				</p>
+				<p>
+					<label for="rg">RG:</label>
+					<input type="text" name="rg" id="rg">
+				</p>
+				<p>
+					<label for="cpf">CPF:</label>
+					<input type="text" name="cpf" id="cpf">
+					<label>-</label>
+					<input type="text" name="">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Dados de Endereço</legend>
+				<p> 
+					<label for="rua">Rua: </label>
+					<input type="text" name="rua" id="rua"> 
+					<label for="numero">Numero: </label>
+					<input type="text" name="numero" id="numero">
+				</p>
+				<p>
+					<label for="bairro">Bairro: </label>
+					<input type="text" name="bairro" id="bairro">
+				</p>
+				<p>
+					<label for="uf">Estado:</label>
+					<input type="text" name="uf" id="uf" list="estados_brasil" placeholder="Acre">
+					<datalist id="estados_brasil">
+						<option value="Acre">
+						<option value="Alagoas">
+						<option value="Amapá">
+						<option value="Amazonas">
+						<option value="Bahia">
+						<option value="Ceará">
+						<option value="Distrito Federal">
+						<option value="Espírito Santo">
+						<option value="Goiás">
+						<option value="Maranhão">
+						<option value="Mato Grosso">
+						<option value="Mato Grosso do Sul">
+						<option value="Minas Gerais">
+						<option value="Pará">
+						<option value="Paraíba">
+						<option value="Paraná">
+						<option value="Pernambuco">
+						<option value="Piauí">
+						<option value="Rio de Janeiro">
+						<option value="Rio Grande do Norte">
+						<option value="Rio Grande do Sul">
+						<option value="Rondônia">
+						<option value="Romaima">
+						<option value="Santa Catarina">
+						<option value="São Paulo">
+						<option value="Sergipe">
+						<option value="Tocantins">
+					</datalist>
+				</p>
+				<p>
+					<label for="cidade">Cidade:</label>
+					<input type="text" name="cidade" id="cidade">
+				</p>
+				<p>
+					<label for="cep">CEP:</label>
+					<input type="text" name="cep" id="cep">
+					<label>-</label>
+					<input type="text" name="">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Dados de login</legend>
+				<p>
+					<label for="email">E-mail: </label>
+					<input type="email" name="email" id="email">
+				</p>
+				<p>
+					<label for="perfil">Imagem de perfil: </label>
+					<input type="file" name="perfil" id="perfil">
+				</p>
+				<p>
+					<label for="login">Login de usuário: </label>
+					<input type="text" name="login" id="login">
+				</p>
+				<p>
+					<label for="senha">Senha:</label>
+					<input type="password" name="senha" id="senha">
+				</p>
+				<p>
+					<label for="conf_senha">Confirme a senha:</label>
+					<input type="password" name="conf_senha" id="conf_senha">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Pesquisa de interesse</legend>
+				<p>
+					<label>Você deseja trabalhar como Webmaster?</label>
+					<input type="radio" name="grupo1" id="sim">
+					<label for="sim">Sim</label>
+					<input type="radio" name="grupo1" id="nao">
+					<label for="nao">Não</label>
+					<input type="radio" name="grupo1" id="talvez">
+					<label for="talvez">Talvez</label>
+					<input type="radio" name="grupo1" id="quems">
+					<label for="quems">Quem Sabe</label>
+				</p>
+				<p>
+					<label>O que você deseja aprender?</label>
+					<input type="checkbox" name="grupo2" id="html">
+					<label for="html">HTML</label>
+					<input type="checkbox" name="grupo2" id="css">
+					<label for="css">CSS</label>
+					<input type="checkbox" name="grupo2" id="javascript">
+					<label for="javascript">JavaScript</label>
+					<input type="checkbox" name="grupo2" id="Django">
+					<label for="Django">Django</label>
+				</p>
+				<p>
+					<label>Deixe seu comentario:</label>
+					<textarea rows="10" cols="40" maxlength="500"></textarea>
+				</p>
+			</fieldset>
+		</form>
+	</section>
+
+</body>
+</html>
