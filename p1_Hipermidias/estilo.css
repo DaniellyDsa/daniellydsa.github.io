@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet&display=swap');
+
+body {
+	display: grid;
+	grid-template-areas: 
+		"header header header"
+		"leftAside corpo imageAside"
+		"footer footer footer";
+	grid-template-rows: auto auto auto;
+	margin: auto;
+	width: 90%;
+	font-size: 12pt;
+	font-family: 'Sniglet', cursive;
+}
+
+header#inicio {
+	grid-area: header;
+	text-align: right;
+	margin: 5px;
+}
+
+header img#icone {
+	float: left;
+}
+
+aside.left {
+	grid-area: leftAside;
+	width: 250px;
+	margin: 15px;
+}
+
+img#iconeLateral {
+	margin: 10px;
+}
+
+
+aside.images {
+	grid-area: imageAside;
+	width: 300px;
+	margin: 0px;
+}
+
+section {
+	grid-area: corpo;
+}
+
+nav li {
+	display: inline-block;
+}
+
+footer {
+	grid-area: footer;
+	text-align: center;
+	display: inline-block;
+}
+
+nav.menu {
+	margin: 0px;
+}
+
+nav.menu li {
+	background-color: #CCCCCC;
+	border: 0.5px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	margin: 3px;
+	padding: 0px;
+	text-align: center;
+	width: 160px;
+	transition: background-color 1s;
+}
+
+nav.menu a {
+	text-decoration: none;
+	color: black;
+	font-size: 12pt;
+	display: block;
+	transition: color 1s;
+	margin: 3px 10px 3px 10px;
+	padding: 0px;
+}
+
+nav.menu a:hover {
+	color: white;
+}
+
+nav.menu li:hover {
+	background-color: #666666;
+	color: white;
+}
+
+aside.left li {
+	text-align: left;
+	width: 220px;
+	margin: 10px;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
+ul#most {
+	display: block;
+	background-color: #CCCCCC;
+	border: 0.5px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	font-size: 10pt;
+	padding: 15px;
+}
+
