@@ -15,16 +15,18 @@
           <li> <a href="#">Sitemap</a> </li>
           <li> <a href="#">A-Z</a> </li>
           <li> <a href="#">Contact</a> </li>
-       	  <li> Text: <a href="#">A</a> <a href="#">A</a> <a href="#">A</a> </li>
+       	  <li> Text: <a class="fonte" href="#"><small>A</small></a> <a class="fonte" href="#"><strong>A</strong></a> <a id="contra" class="fonte" href="#">A</a> </li>
         </ul>
         <br>
-        <input type="button" name="Find a School" value="Find a School">
-        <input type="search" name="search" placeholder="Site search">
-        <input type="submit" name="submit" value="OK"> <br>
-        <a href="#">Advanced Search</a>
+        <form action="#" target="_blank" method="get">
+          <input class="formNav" type="button" src="#" id="find" value="Find a School">
+          <input class="formNav" type="search" name="search" placeholder="Site search">
+          <input class="formNav" type="submit" value="OK"> <br>
+          <a id="advSearch" href="#">Advanced Search</a>
+        </form>
       </nav>
       <nav class="menu">
-        <ul>
+        <ul id="principal">
           <li> <a href="#">Parents</a> </li>
           <li> <a href="#">Teachers</a> </li>
           <li> <a href="#">Schools & Colleges</a> </li>
@@ -56,7 +58,7 @@
         <a href="#">Notícia 4</a>
       </article>
       <article class="newsticker">
-        <h2>Newsticker</h2>
+        <h3>Newsticker</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <input type="button" name="pause" value=">">
@@ -64,7 +66,7 @@
         <input type="button" name="setabaixo" value=">">
       </article>
       <article class="calendar">
-        <h2>Calendar</h2>
+        <h3>Calendar</h3>
         <a href="#">Events ></a>
         <input type="button" name="calendario" value=">"> <br>
         25 - 26 January 2012
@@ -76,21 +78,20 @@
       </article>
     </section>
     <aside class="images">
-      <figure>
-        <img src="#" alt="imagem principal">
+      <figure id="figurePrincipal">
+        <img src="imagens/imagem1.png" alt="imagem principal">
         <figcaption>
-          <h1>Titulo da imagem</h1>
-          <p>Legenda da imagem, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>Library</h2>
+          <p>Our library contains a wide variety of books, magazines and articles.</p>
         </figcaption>
       </figure>
-      <figure>
-        <img src="#" alt="figura menor 1">
-        <figcaption> <h1>Titulo da figura menor 1</h1> </figcaption>
+      <figure class="figMenor">
+        <img src="imagens/imagem2.png" alt="figura menor 1">
+        <figcaption> <h2>Forum</h2> </figcaption>
       </figure>
-      <figure>
-        <img src="#" alt="figura menor 2">
-        <figcaption> <h1>Titulo da figura menor 2</h1> </figcaption>
+      <figure class="figMenor">
+        <img src="imagens/imagem3.png" alt="figura menor 2">
+        <figcaption> <h2>Projects</h2> </figcaption>
       </figure>
     </aside>
     <aside class="left">
@@ -105,7 +106,7 @@
           <li> <a href="#">Construction Documents</a> </li>
         </ul>
       </nav>
-      <h1>Most popular</h1>
+      <h2>Most popular</h2>
       <ul id="most">
         <li><a href="#">School Holidays</a></li>
         <li><a href="#">School Inspection Reports</a></li>
@@ -114,8 +115,8 @@
         <li><a href="#">State Examinations Commission</a></li>
       </ul>
     </aside>
-    <hr>
     <footer>
+      <hr>
       <nav class="nav">
         <ul>
           <li> <a href="#">Feedback</a> </li>
@@ -124,8 +125,8 @@
           <li> <a href="#">www.gov.ie</a> </li>
         </ul>
       </nav>
-      <a href="#inicio">Voltar ao inicio</a>
-      Departamentof Education and Skills | An Rain Oideachais Agus Scileanna
+      <a id="voltar" href="#inicio">Voltar ao inicio</a>
+      <span>Departamentof Education and Skills | An Rain Oideachais Agus Scileanna</span>
     </footer>
   </body>
 </html>
