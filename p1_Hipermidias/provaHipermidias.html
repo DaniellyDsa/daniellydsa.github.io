@@ -15,7 +15,7 @@
           <li> <a href="#">Sitemap</a> </li>
           <li> <a href="#">A-Z</a> </li>
           <li> <a href="#">Contact</a> </li>
-       	  <li> Text: <a class="fonte" href="#"><small>A</small></a> <a class="fonte" href="#"><strong>A</strong></a> <a id="contra" class="fonte" href="#">A</a> </li>
+       	  <li> Text: <a id="small"class="fonte" href="#">A</a> <a id="bigger" class="fonte" href="#">A</a> <a id="contra" class="fonte" href="#">A</a> </li>
         </ul>
         <br>
         <form action="#" target="_blank" method="get">
@@ -35,46 +35,68 @@
       </nav>
     </header>
     <section>
-      <article class="new">
+      <article id="new">
+        <header>
           <h2>What's New</h2>
-          <a href="#">More News</a>
-          <input type="button" name="mais" value=">">
-        <img src="#" alt="Imagem da notícia">
-        <a href="#">Notícia principal</a> <br>
-        19 January 2012
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-        13 January 2012
-        <a href="#">Notícia 2</a> <br>
-        09 January 2012
-        <a href="#">Notícia 3</a> <br>
-        29 December 2011
-        <a href="#">Notícia 4</a>
+          <input class="aButton" id="more" type="button" name="mais" value=">">
+          <a class="link" href="#">More News</a>
+        </header>
+        <div class="corpo">
+          <img src="imagens/news.png" alt="Imagem da notícia">
+          <h4><a href="#">Notícia principal</a></h4>
+          <span class="data">19 January 2012</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <table>
+          <tr>
+            <td class="data">13 January 2012</td>
+            <td><a href="#">Notícia 2</a></td>
+          </tr>
+          <tr>
+            <td class="data">09 January 2012</td>
+            <td><a href="#">Notícia 3</a></td>
+          </tr>
+          <tr>
+            <td class="data">29 December 2011</td>
+            <td><a href="#">Notícia 4</a></td>
+          </tr>
+        </table>
       </article>
-      <article class="newsticker">
+      <article id="newsticker">
+        <input class="aButton" type="button" name="pause" value=">">
         <h3>Newsticker</h3>
+        <input class="aButton" type="button" name="setacima" value=">">
+        <input class="aButton" type="button" name="setabaixo" value=">">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <input type="button" name="pause" value=">">
-        <input type="button" name="setacima" value=">">
-        <input type="button" name="setabaixo" value=">">
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </article>
-      <article class="calendar">
-        <h3>Calendar</h3>
-        <a href="#">Events ></a>
-        <input type="button" name="calendario" value=">"> <br>
-        25 - 26 January 2012
-        <a href="#">Evento 1</a> <br>
-        02-03 February 2012
-        <a href="#">Evento 2</a> <br>
-        14 - 16 March 2012
-        <a href="#">Evento 3</a>
+      <article id="calendar">
+        <header>
+          <h3>Calendar</h3>
+          <input class="aButton" id="events" type="button" name="calendario" value=">">
+          <a class="link" href="#">Events </a>
+        </header>
+        <table>
+          <tr>
+            <td class="data">25 - 26 January 2012</td>
+            <td><a href="#">Evento 1</a></td>
+          </tr>
+          <tr>
+            <td class="data">02-03 February 2012</td>
+            <td><a href="#">Evento 2</a></td>
+          </tr>
+          <tr>
+            <td class="data">14 - 16 March 2012</td>
+            <td><a href="#">Evento 3</a></td>
+          </tr>
+        </table>
       </article>
     </section>
     <aside class="images">

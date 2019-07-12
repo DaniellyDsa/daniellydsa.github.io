@@ -13,15 +13,7 @@ body {
 	font-size: 12pt;
 	font-family: 'Sniglet', cursive;
 	max-width: 1200px;
-	min-width: 920px;
-}
-
-h2 {
-	font-size: 16pt;
-}
-
-h3 {
-	font-size: 14pt;
+	min-width: 1100px;
 }
 
 header#inicio {
@@ -38,49 +30,24 @@ header img#icone {
 	box-shadow: none;
 }
 
-aside.left {
-	grid-area: leftAside;
-	padding: 10px;
+h2 {
+	font-size: 16pt;
 }
 
-img#iconeLateral {
-	margin: auto;
-	width: 100%;
-	border: 5px solid white;
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+h3 {
+	font-size: 14pt;
 }
 
-
-aside.images {
-	grid-area: imageAside;
-	margin: 0px;
-	padding: 10px;
+h4 {
+	font-size: 13pt;
 }
 
-section {
-	grid-area: corpo;
-	margin: 0px 20px 0px 20px;
-}
-
-nav li {
-	display: inline-block;
-}
-
-
-nav.menu ul#principal {
-	margin-left: 23%;
-	margin-top: 30px;
-}
-
-nav.menu li {
-	background-color: #CCCCCC;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
+p, h2, h3, h4 {
 	margin: 5px;
-	text-align: center;
-	transition: background-color 1s;
-	width: 23%;
+}
+
+hr {
+	margin: 20px 0px;
 }
 
 a {
@@ -90,26 +57,21 @@ a {
 	text-decoration: none;
 }
 
-
-nav.menu a {
-	padding: 10px;
-	display: block;
-}
-
-
-nav.menu a:hover {
+a#contra {
+	background-color: black;
 	color: white;
 }
 
-nav.menu li:hover {
-	background-color: #666666;
-	color: white;
+a#small {
+	font-size: 9pt;
 }
 
-aside.left li {
-	text-align: left;
-	margin: 15px 0px 0px 0px;
-	width: 100%;
+a#bigger {
+	font-size: 12pt;
+}
+
+a#advSearch {
+	padding: 20px;
 }
 
 ul {
@@ -136,16 +98,103 @@ ul#most li::before {
 	content: "> ";
 }
 
-aside.left h2 {
-	margin-bottom: 5px;
-	margin-left: 5px;
-	font-size:
-}
-
 img {
 	margin: auto;
 	width: 100%;
 	height: 100%;
+}
+
+img#iconeLateral {
+	margin: auto;
+	width: 100%;
+	height: 20%;
+	border: 5px solid white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav li {
+	display: inline-block;
+}
+
+
+nav.menu ul#principal {
+	margin-left: 23%;
+	margin-top: 30px;
+}
+
+nav.menu li {
+	background-color: #CCCCCC;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	margin: 5px;
+	text-align: center;
+	transition: background-color 1s;
+	width: 23%;
+}
+
+nav.menu a {
+	padding: 10px;
+	display: block;
+}
+
+
+nav.menu a:hover {
+	color: white;
+}
+
+nav.menu li:hover {
+	background-color: #666666;
+	color: white;
+}
+
+nav.nav a {
+	text-decoration: underline;
+	padding: 0px;
+	font-size: 10pt;
+}
+
+nav.nav li {
+	border-right: 1px solid black;
+	padding: 0px 15px;
+}
+
+nav.nav li:last-child {
+	border-right: 0px solid black;
+}
+
+nav.nav a.fonte {
+	padding: 5px;
+	text-decoration: none;
+}
+
+
+aside.left {
+	grid-area: leftAside;
+	padding: 10px;
+}
+
+aside.left li {
+	text-align: left;
+	margin: 15px 0px 0px 0px;
+	width: 100%;
+}
+
+aside.left h2 {
+	margin: 10px;
+	margin-top: 15px;
+}
+
+aside.images {
+	grid-area: imageAside;
+	margin: 0px;
+	padding: 10px;
+}
+
+section {
+	grid-area: corpo;
+	margin: 0px 20px 0px 20px;
+	padding: 5px;
 }
 
 figure {
@@ -156,7 +205,7 @@ figure {
 }
 
 figure.figMenor {
-	height: 20%;
+	height: 22%;
 }
 
 figure.figMenor img {
@@ -164,7 +213,6 @@ figure.figMenor img {
 	height: 80%;
 	float: left;
 	margin: 10px;
-	vertical-align: middle;
 }
 
 figure.figMenor figcaption {
@@ -176,28 +224,18 @@ figure.figMenor figcaption {
 figure#figurePrincipal {
 	position: relative;
 	width: 100%;
-	height: 40%;
+	height: 45%;
 }
 
 figure#figurePrincipal figcaption {
-	opacity: 0;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
 	top: 30%;
-	transition: opacity 1s;
-}
-
-figure#figurePrincipal:hover figcaption {
-	opacity: 1;
 }
 
 figcaption h2, figcaption p {
 	margin: 10px;
-}
-
-hr {
-	margin: 20px 0px;
 }
 
 footer {
@@ -222,36 +260,6 @@ footer span {
 	float: right;
 }
 
-nav.nav a {
-	text-decoration: underline;
-	padding: 0px;
-	font-size: 10pt;
-}
-
-nav.nav li {
-	border-right: 1px solid black;
-	padding: 0px 15px;
-}
-
-nav.nav li:last-child { 
-	border-right: 0px solid black; 
-}
-
-nav.nav a.fonte {
-	padding: 5px;
-	text-decoration: none;
-}
-
-a strong {
-	font-size: 12pt;
-}
-
-nav.nav a#contra {
-	background-color: black;
-	color: white;
-	width: auto;
-}
-
 input.formNav {
 	box-shadow: 0px 0px 10px black;
 	font-family: 'Sniglet', cursive;
@@ -265,9 +273,77 @@ input[type="button"]#find {
 
 input[type="search"] {
 	width: 20%;
-	margin: 
+	margin:
 }
 
-a#advSearch {
-	padding: 20px;
+input.aButton {
+	box-shadow: 0px 0px 10px black;
+	font-family: 'Sniglet', cursive;
+	float: right;
+	clear: right;
+	margin: 10px;
+}
+
+input#more, input#events {
+	margin: 5px;
+}
+
+article {
+	background-color: #CCCCCC;
+	padding: 15px;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+article img {
+	width: 30%;
+	height: 22%;
+	float: left;
+	margin: 5px;
+}
+
+article a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+article a.link {
+	float: right;
+	font-weight: normal;
+}
+
+article header h2, article header h3 {
+	float: left;
+}
+
+article#new {
+	height: 40%;
+}
+
+article#newsticker, article#calendar {
+	height: 18%;
+}
+
+div.corpo {
+	clear: left;
+}
+
+table {
+	clear: left;
+	margin-left: 20px;
+}
+
+span.data {
+	font-style: italic;
+	margin: 0px 10px;
+}
+
+td.data {
+	font-style: italic;
+	text-align: right;
+}
+
+td {
+	padding: 5px;
 }
