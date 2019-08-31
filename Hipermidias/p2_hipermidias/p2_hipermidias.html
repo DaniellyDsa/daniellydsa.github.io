@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Reserva de Hotel</title>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Formulário de reserva de hotel</h1>
+    <form class="reserva" action="index.html" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" value=""> <br>
+        <label for="fone">Telefone: </label>
+        <input type="tel" id="fone" name="fone" value=""> <br>
+      </fieldset>
+      <fieldset>
+        <legend>Informações sobre a reserva</legend>
+        <label for="checkin">Data de chegada: </label>
+        <input type="date" id="checkin" name="checkin" value=""> <br>
+        <label for="checkout">Data de saída: </label>
+        <input type="date" id="checkout" name="checkout" value=""> <br>
+        <label for="quartos">Quantidade de quartos: </label>
+        <select name="quartos" id="quartos">
+          <option value="0">-</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </fieldset>
+      <fieldset id="quarto1">
+        <legend>Informações sobre o(s) quarto(s)</legend>
+        <label for="tipo1">Tipo de quarto: </label>
+        <select name="tipo1" id="tipo1">
+          <option>-</option>
+          <option value="139.00">Single (R$ 139,00)</option>
+          <option value="220.00">Double (R$ 220,00)</option>
+          <option value="340.00">Triplo (R$ 340,00)</option>
+        </select> <br>
+        <label for="crianca">Criança: </label>
+        <input type="radio" name="crianca" value="1">Sim
+        <input type="radio" name="crianca" value="2">Não <br>
+        <label for="idade">Idade da criança: </label>
+        <select name="idade" id="idade">
+          <option>-</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+        </select>
+      </fieldset>
+      <fieldset id="quarto2">
+        <legend>Informações sobre o(s) quarto(s)</legend>
+        <label for="tipo2">Tipo de quarto: </label>
+        <select name="tipo2" id="tipo2">
+          <option>-</option>
+          <option value="139.00">Single (R$ 139,00)</option>
+          <option value="220.00">Double (R$ 220,00)</option>
+          <option value="340.00">Triplo (R$ 340,00)</option>
+        </select> <br>
+        <label for="crianca2">Criança: </label>
+        <input type="radio" name="crianca2" value="Sim">Sim
+        <input type="radio" name="crianca2" value="Não">Não <br>
+        <label for="idade2">Idade da criança: </label>
+        <select name="idade2" id="idade2">
+          <option>-</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+        </select>
+      </fieldset>
+      <fieldset id="quarto3">
+        <legend>Informações sobre o(s) quarto(s)</legend>
+        <label for="tipo3">Tipo de quarto: </label>
+        <select name="tipo3" id="tipo3">
+          <option>-</option>
+          <option value="139.00">Single (R$ 139,00)</option>
+          <option value="220.00">Double (R$ 220,00)</option>
+          <option value="340.00">Triplo (R$ 340,00)</option>
+        </select> <br>
+        <label for="crianca3">Criança: </label>
+        <input type="radio" name="crianca3" value="Sim">Sim
+        <input type="radio" name="crianca3" value="Não">Não <br>
+        <label for="idade3">Idade da criança: </label>
+        <select name="idade3" id="idade3">
+          <option>-</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+        </select>
+      </fieldset>
+      <input type="button" id="reserva" name="button" value="Fazer reserva">
+    </form>
+  </body>
+</html>
